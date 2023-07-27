@@ -4,7 +4,9 @@ image:
   pullPolicy: Always
 
 replicaCount: 1
-imagePullSecrets: acr-registry
+
+imagePullSecrets:
+- name: acr-registry
 
 resources:
    limits:
